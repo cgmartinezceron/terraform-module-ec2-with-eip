@@ -22,6 +22,9 @@ resource "aws_security_group" "sg" {
     create_before_destroy = true
   }
 
+  tags = {
+    Name = "${var.proyecto}-${var.environment}"
+  }
 
 }
 
