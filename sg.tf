@@ -1,7 +1,7 @@
 resource "aws_security_group" "sg" {
   name_prefix        = "${var.project_name}-${var.environment}-"
   description = "Security group for ${var.project_name}-${var.environment}"
-  vpc_id      = "${var.vpc_id}"
+  vpc_id      = var.vpc_id
 
   ingress {
     from_port   = 0
