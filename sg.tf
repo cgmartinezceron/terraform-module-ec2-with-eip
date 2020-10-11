@@ -23,7 +23,7 @@ resource "aws_security_group" "sg" {
   }
 
   tags = {
-    Name = "${var.proyecto}-${var.environment}"
+    Name = "${var.project_name}-${var.environment}"
   }
 
 }
