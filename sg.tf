@@ -25,6 +25,5 @@ resource "aws_security_group" "sg" {
   tags = {
     Name = "${var.project_name}-${var.environment}"
   }
-ESTO ES UN EJEMPLO DE PUSH -BORRAR-
 }
 
